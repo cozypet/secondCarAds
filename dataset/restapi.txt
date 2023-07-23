@@ -1,0 +1,5 @@
+
+curl https://hanhantest.cognitiveservices.azure.com/language/analyze-text/jobs/<OPERATION-ID>?api-version=2022-10-01-preview -H "Ocp-Apim-Subscription-Key : YOURKEY"
+
+
+curl -X POST "https://hanhantest.cognitiveservices.azure.com/language/analyze-text/jobs?api-version=2022-10-01-preview" -H "Ocp-Apim-Subscription-Key: YOURKEY" -H "Content-Type: application/json" -d "{\"tasks\":[{\"kind\":\"CustomEntityRecognition\",\"parameters\":{\"projectName\":\"customNERLab\",\"deploymentName\":\"customExtractAds\",\"stringIndexType\":\"TextElement_v8\"}}],\"displayName\":\"CustomTextPortal_CustomEntityRecognition\",\"analysisInput\":{\"documents\":[{\"id\":\"document_CustomEntityRecognition\",\"text\":\"YOUR_DOCUMENT_HERE\",\"language\":\"YOUR_DOCUMENT_LANGUAGE_HERE\"}]}}"
